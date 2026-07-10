@@ -7,18 +7,18 @@ export const Route = createFileRoute('/')({
 const services = [
   {
     tag: '01',
-    title: 'Educational Consulting',
-    copy: 'Curriculum audits, instructional design reviews, and accreditation prep for districts and independent schools weighing their next three years, not just their next semester.',
+    title: 'Real Estate Consulting',
+    copy: 'Buyer and Seller representations, contract preparation and review, and licensed representation for residential and commercial sales.',
   },
   {
     tag: '02',
     title: 'Materials Acquisition',
-    copy: 'Vendor evaluation, bid management, and procurement pipelines that keep textbook and instructional-materials budgets accountable from RFP to delivery.',
+    copy: 'Vendor evaluation, bid management, and procurement pipelines that keep materials budgets accountable from RFP to delivery.',
   },
   {
     tag: '03',
     title: 'Data Management',
-    copy: 'Student information systems, reporting dashboards, and data-governance policy that hold up under state audit — built to be used, not just installed.',
+    copy: 'Information systems, reporting dashboards, and data-governance policy that hold up under state audit — built to be used, not just installed.',
   },
   {
     tag: '04',
@@ -29,16 +29,16 @@ const services = [
 
 const engagements = [
   {
-    stat: '17',
-    label: 'districts advised since 2019',
+    stat: 'Serving Clients',
+    label: 'since 2019',
   },
   {
-    stat: '6,400+',
-    label: 'staff seats migrated across SIS platforms',
+    stat: '1000+',
+    label: 'seats migrated across SIS platforms',
   },
   {
-    stat: '3',
-    label: 'states with active procurement contracts',
+    stat: 'Managing',
+    label: 'procurement contracts',
   },
 ]
 
@@ -74,7 +74,7 @@ function Home() {
         <section className="max-w-6xl mx-auto px-6 pt-20 pb-24 grid md:grid-cols-12 gap-8">
           <div className="md:col-span-8 reveal">
             <p className="uppercase tracking-[0.2em] text-xs text-[var(--color-rust-dark)] mb-6">
-              Independent consultancy for K&ndash;12 systems
+              Independent consultancy
             </p>
             <h1 className="font-display text-5xl md:text-6xl leading-[1.05] mb-8">
               Schools run on decisions made two budget cycles ago.
@@ -82,8 +82,7 @@ function Home() {
               <span className="italic">We help you make the next ones well.</span>
             </h1>
             <p className="text-lg max-w-xl leading-relaxed text-[var(--color-ink)]/80">
-              Fenwick Hale works directly with district leadership and school
-              administrators on curriculum strategy, materials procurement,
+              Forsees works directly with real estate, materials procurement,
               data infrastructure, and the IT systems underneath all of it.
               One point of contact, four disciplines, no handoffs between
               vendors who don't talk to each other.
@@ -217,13 +216,13 @@ function Home() {
                 href="mailto:margaret@fenwickhale.com"
                 className="inline-block text-lg border-b border-[var(--color-paper)]/40 pb-1 hover:border-[var(--color-rust)] hover:text-[var(--color-rust)] transition-colors w-fit"
               >
-                margaret@fenwickhale.com
+                contact@forsees.com
               </a>
               <a
                 href="tel:+16175550148"
                 className="inline-block text-lg border-b border-[var(--color-paper)]/40 pb-1 hover:border-[var(--color-rust)] hover:text-[var(--color-rust)] transition-colors w-fit"
               >
-                (617) 555&ndash;0148
+                (813) 454&ndash;6613
               </a>
             </div>
           </div>
@@ -232,8 +231,8 @@ function Home() {
 
       <footer className="bg-[var(--color-ink)] text-[var(--color-paper)]/60 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm">
-          <span>&copy; 2026 Fenwick Hale Consulting</span>
-          <span>Boston, Massachusetts</span>
+          <span>&copy; 2026 Forsees Consulting</span>
+          <span>Apopka, Florida</span>
         </div>
       </footer>
     </div>
