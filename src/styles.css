@@ -1,0 +1,41 @@
+@import "tailwindcss" source("../");
+
+:root {
+  --color-ink: #24211d;
+  --color-paper: #f6f2ea;
+  --color-paper-dim: #efe9dd;
+  --color-rust: #a8552e;
+  --color-rust-dark: #8a4324;
+  --color-line: #dcd3c2;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
