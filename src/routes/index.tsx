@@ -48,7 +48,7 @@ function Home() {
       <header className="border-b border-[var(--color-line)]">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-5">
           <span className="font-display text-xl tracking-tight">
-            Fenwick Hale
+            Forsees
           </span>
           <nav className="hidden sm:flex items-center gap-8 text-sm">
             <a href="#services" className="hover:text-[var(--color-rust)] transition-colors">
@@ -71,15 +71,62 @@ function Home() {
       </header>
 
       <main>
-        <section className="max-w-6xl mx-auto px-6 pt-20 pb-24 grid md:grid-cols-12 gap-8">
-          <div className="md:col-span-8 reveal">
+        <section className="relative overflow-hidden max-w-6xl mx-auto px-6 pt-20 pb-24 grid md:grid-cols-12 gap-8">
+          <svg
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 z-0 h-full w-full"
+            preserveAspectRatio="xMidYMid slice"
+            viewBox="0 0 1200 700"
+            fill="none"
+          >
+            <defs>
+              <pattern
+                id="hero-grid"
+                width="46"
+                height="46"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M46 0H0V46"
+                  stroke="var(--color-ink)"
+                  strokeWidth="1"
+                  opacity="0.05"
+                />
+              </pattern>
+              <radialGradient id="hero-fade" cx="72%" cy="34%" r="62%">
+                <stop offset="0%" stopColor="white" stopOpacity="1" />
+                <stop offset="70%" stopColor="white" stopOpacity="0.35" />
+                <stop offset="100%" stopColor="white" stopOpacity="0" />
+              </radialGradient>
+              <mask id="hero-mask">
+                <rect width="1200" height="700" fill="url(#hero-fade)" />
+              </mask>
+            </defs>
+            <rect width="1200" height="700" fill="url(#hero-grid)" />
+            <g
+              stroke="var(--color-rust)"
+              strokeWidth="1.25"
+              opacity="0.16"
+              mask="url(#hero-mask)"
+            >
+              <circle cx="900" cy="235" r="66" />
+              <circle cx="900" cy="235" r="132" />
+              <circle cx="900" cy="235" r="198" />
+              <circle cx="900" cy="235" r="264" />
+              <circle cx="900" cy="235" r="330" />
+              <line x1="900" y1="-120" x2="900" y2="590" />
+              <line x1="545" y1="235" x2="1255" y2="235" />
+              <line x1="648" y1="-17" x2="1152" y2="487" />
+            </g>
+          </svg>
+          <div className="relative z-10 md:col-span-8 reveal">
             <p className="uppercase tracking-[0.2em] text-xs text-[var(--color-rust-dark)] mb-6">
               Independent consultancy
             </p>
             <h1 className="font-display text-5xl md:text-6xl leading-[1.05] mb-8">
-              Schools run on decisions made two budget cycles ago.
+              Navigating Complexity.
               <br />
-              <span className="italic">We help you make the next ones well.</span>
+              <span className="italic">Delivering Clarity.</span>
             </h1>
             <p className="text-lg max-w-xl leading-relaxed text-[var(--color-ink)]/80">
               Forsees works directly with real estate, materials procurement,
@@ -88,7 +135,7 @@ function Home() {
               vendors who don't talk to each other.
             </p>
           </div>
-          <div className="md:col-span-4 md:pt-24 flex md:justify-end reveal" style={{ animationDelay: '120ms' }}>
+          <div className="relative z-10 md:col-span-4 md:pt-24 flex md:justify-end reveal" style={{ animationDelay: '120ms' }}>
             <div className="border border-[var(--color-line)] rounded-2xl p-6 bg-[var(--color-paper-dim)] max-w-xs">
               <p className="font-display text-lg mb-3">Currently accepting</p>
               <p className="text-sm leading-relaxed text-[var(--color-ink)]/75">
@@ -213,16 +260,16 @@ function Home() {
             </div>
             <div className="md:col-span-5 md:pl-8 flex flex-col gap-3 justify-center">
               <a
-                href="mailto:margaret@fenwickhale.com"
+                href="mailto:contact@forsees.com"
                 className="inline-block text-lg border-b border-[var(--color-paper)]/40 pb-1 hover:border-[var(--color-rust)] hover:text-[var(--color-rust)] transition-colors w-fit"
               >
                 contact@forsees.com
               </a>
               <a
-                href="tel:+16175550148"
+                href="tel:+18134546613"
                 className="inline-block text-lg border-b border-[var(--color-paper)]/40 pb-1 hover:border-[var(--color-rust)] hover:text-[var(--color-rust)] transition-colors w-fit"
               >
-                (813) 454&ndash;6613
+                (813) 454-6613
               </a>
             </div>
           </div>
