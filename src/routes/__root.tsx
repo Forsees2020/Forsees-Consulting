@@ -14,12 +14,12 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'Fenwick Hale Consulting — Educational & Data Strategy',
+        title: 'Forsees Consulting — Educational & Data Strategy',
       },
       {
         name: 'description',
         content:
-          'Fenwick Hale Consulting advises schools and districts on curriculum strategy, materials acquisition, data management, and IT infrastructure.',
+          'Forsees Consulting advises on strategy, materials acquisition, data management, real estate, and IT infrastructure.',
       },
     ],
     links: [
