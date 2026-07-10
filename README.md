@@ -1,8 +1,8 @@
-# Fenwick Hale Consulting
+# Forsees Consulting
 
-Marketing site for Fenwick Hale Consulting, an independent consultancy that
-advises school districts and independent schools on educational strategy,
-instructional materials procurement, data management, and IT infrastructure.
+Marketing site for Forsees Consulting, an independent consultancy that
+focuses on private/public contracting, IT infrastructure, Real Estate Consulting, and educational strategy,
+
 
 ## Tech stack
 
